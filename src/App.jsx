@@ -9,7 +9,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-calendar-planner">
       <EventProvider>
         <div className="app-container">
           <Navbar />
