@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Calendar, Notebook } from 'lucide-react';
+import { Home, Calendar, Notebook, Github } from 'lucide-react';
 
 const Navbar = () => {
     return (
@@ -17,6 +17,15 @@ const Navbar = () => {
                 <Notebook size={20} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
                 備忘錄
             </NavLink>
+            <a 
+                href="https://github.com/sheranma1/my-calendar-planner" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="nav-link"
+            >
+                <Github size={20} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
+                GitHub
+            </a>
         </nav>
     );
 };
